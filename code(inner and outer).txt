@@ -1,0 +1,11 @@
+import numpy
+ListA=raw_input().split()
+ListA=map(int,ListA)
+ArrayA=numpy.array(ListA)
+#print ArrayA
+ListB=raw_input().split()
+ListB=map(int,ListB)
+ArrayB=numpy.array(ListB)
+#print ArrayB
+print numpy.inner(ArrayA,ArrayB)
+print numpy.outer(ArrayA,ArrayB)
