@@ -1,0 +1,16 @@
+import numpy
+Index=raw_input().split()
+Index=map(int,Index)
+
+MyList=[]
+Temp=[]
+MyArray=[]
+for i in range(Index[0]):
+    Temp=raw_input().split()
+    Temp=map(float,Temp)
+    TempArray=numpy.array(Temp)
+    if i ==0:
+        MyArray=TempArray
+    if i !=0:
+        MyArray=numpy.vstack([MyArray,TempArray])
+print numpy.linalg.det(MyArray)
